@@ -5,9 +5,13 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources",
-        glue = {"api"},   // 👈 this must match your step package
-        plugin = {"pretty"},
+        glue = {"api"},
+        plugin = {
+                "pretty",
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+        },
         monochrome = true
 )
+
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
