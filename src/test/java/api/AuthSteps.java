@@ -23,4 +23,9 @@ public class AuthSteps {
     public void token_should_be_generated() {
         System.out.println("Token generated");
     }
+    
+    
+   
+    
+    
 }
